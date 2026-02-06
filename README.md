@@ -7,7 +7,7 @@ Aplicação fullstack para gestão de inventário do hortifrúti **Cantinho Verd
 - **Frontend:** React + TypeScript + Tailwind (Vite)
 - **Backend:** NestJS + TypeScript
 - **Banco:** PostgreSQL
-- **Auth:** JWT (protege rotas de escrita)
+- **Auth:** JWT
 
 ## Requisitos
 
@@ -19,7 +19,7 @@ Aplicação fullstack para gestão de inventário do hortifrúti **Cantinho Verd
 1. Suba os serviços:
    - `docker compose up --build`
 2. O Postgres executa `sql/schema.sql` + `sql/seed.sql` automaticamente **na primeira inicialização** do volume.
-   - Se você já tinha o volume criado, rode manualmente:
+   - Se você já tiver criado o volume, rode manualmente:
      - `psql "postgres://hortti:hortti@localhost:5432/hortti_inventory" -f sql/schema.sql -f sql/seed.sql`
 3. Abra:
    - Frontend: `http://localhost:5173`
